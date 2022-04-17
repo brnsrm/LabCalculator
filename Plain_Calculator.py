@@ -26,7 +26,9 @@ def percentage(a,b):
 print("Which calculation do you want to execute?")
 print("Following Options: 1. Addition, 2. Subtraction, 3. Multiplication, 4. Division, 5. Percentage")
 
-while True:
+secondcalculation = ""
+
+while not secondcalculation == "no":
     #Input of the user - choice of calculation
     try:
         choice = input("Enter choice (1, 2, 3, 4 or 5):")
@@ -45,21 +47,19 @@ while True:
 
         #Calculation Options
         if choice == "1":
-            print(num1, "+", num2, addition(num1,num2))
+            print(num1, "+", num2, "=", addition(num1,num2))
         elif choice == "2":
-            print(num1, "-", num2, subtraction(num1,num2))
+            print(num1, "-", num2, "=", subtraction(num1,num2))
         elif choice == "3":
-            print(num1, "*", num2, multiplication(num1,num2))
+            print(num1, "*", num2, "=", multiplication(num1,num2))
         elif choice == "4":
-            print(num1, "/", num2, division(num1,num2))
+            print(num1, "/", num2, "=", division(num1,num2))
         elif choice == "5":
-            print((num1, "*", num2),"/", "100", percentage(num1,num2))
+            print((num1, "*", num2),"/", "100", "=", percentage(num1,num2))
         
         #Ask for another calculation
         secondcalculation = input("Do you want to do another calculation?: (Yes/No)")
-        if secondcalculation == "No":
-            break
-    
+
 
 
 
