@@ -1,2 +1,2 @@
 # LabCalculator
-A simple calculator for any wet lab
+A very, very simple calculator for any wet lab (or at least calculations that I needed in my internships)
